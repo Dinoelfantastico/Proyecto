@@ -629,7 +629,7 @@ a{
 }
 
 .bienvenido__formulario input[type="text"]{
-   width: 178%;
+   width: 167%;
    z-index: 1;
    padding: 0.8rem 0.0rem 0.8rem 3.7rem;
    margin-left: 1px;
@@ -755,17 +755,19 @@ a{
     margin-left: 0px;
     margin-bottom: 0px;
 
+
 }
 
 .principal__modulos--abierto{
    align-items: flex-start;
    margin-left: 0px;
    margin-bottom: 0px;
+
 }
 
 .texto{
   top: 65px;
-  left: 55px;
+  left: 80px;
  
 
 }
@@ -784,7 +786,7 @@ font-size: 1.7rem;
 }
 
 .principal__modulos--contenido{
-  width: 285px;
+  width: 340px;
   height: 90px;
   margin-top: 0px;
   
