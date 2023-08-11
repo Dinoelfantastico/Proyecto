@@ -1,0 +1,32 @@
+.acceder{
+    position: absolute;
+}
+
+.container{
+    position: absolute;
+}
+
+
+@media (max-width: 899px){
+    .acceder{
+        top: 345px;
+    }
+
+    .container{
+        top: 270px;
+    }
+
+}
+
+@media (min-width: 900px){
+   
+    .acceder{
+        top: 345px;
+    }
+   
+
+    .container{
+        top: 270px;
+    }
+
+}

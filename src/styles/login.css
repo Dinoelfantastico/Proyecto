@@ -1,0 +1,262 @@
+:root{
+    line-height: 1.2;
+    --primary-blue:#2660A3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+  }
+
+  html{
+    font-size: 62.5%;
+    font-family: 'Monserrat', sans-serif;
+  }
+
+
+.split-screen{
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    height: 200px;
+    position: relative;
+}
+
+.left, .right{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.left{
+    background:url("../assets/imagenes/Celima.jpg");
+    background-size: 100% 100%;
+}
+
+.left .copy{
+    color: white;
+    position: absolute;
+    top: 73%;
+    left: 13%;
+}
+
+.left .copy h1{
+    font-size: 4.7rem;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+
+.left .copy h1::after{
+    content: "__________";
+    display: block;
+    margin-left: 3px;
+    margin-top: -20px;
+    font-size: 3rem;
+
+}
+
+.left .copy p{
+    font-size: 1.70rem;
+
+}
+
+.right .copy{
+    color: black;
+    text-align: center;
+}
+
+.right .copy h2{
+    font-size: 2.0rem;
+}
+
+
+.right .copy p{
+    margin: 0.2rem 0rem 3.0rem 0rem;
+    font-size: 0.997rem;
+
+}
+
+
+.right form{
+    width: 300px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.image-container{
+    display: flex;
+    width: 100%;
+
+}
+
+.input-container.name p{
+    position: absolute;
+}
+
+.input-container.name, .input-container.password{
+    position: relative;
+    display: inline-block;
+}
+
+.input-arroba, .input-icon {
+    position: absolute;
+    left: 10px; 
+    top: 40%;
+    transform: translateY(-40%);
+    height: 20px; 
+    width: 20px; 
+    pointer-events: none; 
+}   
+
+form input[type="text"],
+form input[type="password"] {
+    display: block;
+    width: 270px;
+    border-radius: 2px;
+    border: 1px solid #D5ECF8;
+    padding: 0.8rem 0.8rem 0.8rem 3.7rem;
+    margin-bottom: 3.45rem;
+    outline: none;
+}
+
+
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.contraseña{
+    position: absolute;
+}
+
+.contraseña-link{
+    color: var(--primary-blue);
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+
+.button-container{
+    position: absolute;
+}
+
+.signup-btn{
+    width: 150px;
+    background: var(--primary-blue);
+    color: white;
+    font-weight: 700;
+    border: 1px solid #D5ECF8;
+    border-radius: 4px;
+    padding: 1.3rem 1.3rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    
+}
+
+
+.footer-formulario{
+    position: absolute;
+}
+
+.footer-formulario p{
+    font-size: 1.1rem;
+   
+}
+
+@media (max-width: 899px){
+    .left{
+        display: none;
+    }
+
+    .right{
+        margin-top: 55px;
+    }
+
+    .image-container{
+        height: 110px;
+    }
+
+    .input-container.name p{
+        top: 55px;
+        color: #888;
+    }
+
+    #password::placeholder{
+        font-size: 2.8rem;
+        font-weight: 600;
+    }
+
+    .contraseña{
+        top: 355px;
+    }
+
+    .button-container{
+        top: 410px;
+    }
+
+    .footer-formulario{
+        top: 580px;
+    }
+}
+
+@media (min-width: 900px){
+    .split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .left,.right{
+        display: flex;
+        height: auto;
+    }
+
+    .left{
+        flex: 1.2;
+    }
+
+    .right{
+        margin-bottom: 55px;
+    }
+
+    .right{
+        flex: 0.51;
+    }
+
+    .image-container{
+        height: 118px;
+    }
+
+    #password::placeholder{
+        font-size: 2.8rem;
+        font-weight: 600;
+    }
+
+    .contraseña{
+        top: 355px;
+    }
+   
+    .input-container.name p{
+        top: 57px;
+        color: #888;
+    }
+
+    .button-container{
+        top: 410px;
+    }
+
+    .footer-formulario{
+        top: 550px;
+    }
+
+}
